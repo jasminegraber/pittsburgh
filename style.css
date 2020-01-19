@@ -1,0 +1,212 @@
+/* BASE STYLES */
+body {
+  font: 1em 'Montserrat', sans-serif;
+  letter-spacing: .065em;
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3.125em;
+  font-weight: bold;
+  letter-spacing: 10px;
+  padding-top: 50px;
+  text-shadow: 1px 1px darkslategrey;
+  text-transform: uppercase;
+}
+
+
+h2,
+h3 {
+  font-family: 'Lora', serif;
+  text-transform: lowercase;
+  font-style: italic;
+  letter-spacing: 5px;
+  border-bottom: 3px solid;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+h2 {
+  font-size: 32px;
+}
+/* LAYOUT STYLES */
+.primary-content,
+.secondary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.sports,
+.neighborhoods {
+  display: inline-block;
+  width: 50%;
+}
+
+.sports {
+  padding-left: 100px;
+}
+
+.neighborhoods {
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.neighborhood-box,
+.sports-box {
+  margin: auto;
+  padding: 2%;
+}
+
+.pirates-img {
+  float: left;
+  margin-top: 8.5%;
+  margin-left: 6%;
+}
+
+.city-point {
+  float: right;
+  margin-top: 7%;
+  margin-right: 6%;
+}
+/* PSEUDO STYLES */
+
+a:link {
+  text-decoration: none;
+  color: #fdd130;
+}
+a:visited {
+  color: #fdd130;
+}
+
+a:hover {
+  background-color: #000;
+}
+/* MAIN STYLES */
+.main-header {
+  background: linear-gradient(#fdd130, transparent 90%),
+  linear-gradient(0deg, white, transparent),
+    url('../pittsburgh/img/bridge.jpeg') no-repeat center;
+  background-position: 100% 120%;
+  background-size: cover;
+  height: 650px;
+  padding-top: 170px;
+}
+
+.city-of-bridges {
+  font-family: 'Lora', serif;
+  font-size: 35px;
+  font-style: italic;
+  letter-spacing: 5px;
+  text-transform: lowercase;
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;
+}
+
+.main-header,
+.primary-content,
+.main-footer {
+  text-align: center;
+}
+
+.img-size {
+  width: 30%;
+}
+
+
+.arrow {
+  width: 5%;
+  display: block;
+  margin: auto;
+  padding-top: 4%;
+}
+
+
+.main-footer {
+  border-bottom: 30px solid #fdd130;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 70px;
+  display: inline-block;
+  text-transform: uppercase;
+
+}
+
+.weather {
+color: #000;
+ text-align: center;
+ padding: 20%;
+ border-top: 10px solid #fdd130;
+ margin: 105px 0 60px;
+ background: radial-gradient(#fff, transparent 200%),
+ url('../pittsburgh/img/skyline.jpeg') no-repeat center 75%;
+ background-size: cover;
+ border-radius: 50%;
+}
+
+.primary-content {
+	padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.pgh-gold {
+  color: #fdd130;
+  background-color: #000;
+}
+
+.pgh-black {
+  color: #000 ;
+  background-color: #fdd130;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-header {
+    background-position: 60% 120%;
+  }
+
+  .img-size {
+    width: 50%;
+  }
+
+  .pirates-img {
+    float: none;
+    margin: auto;
+    display: block;
+  }
+
+  .sports {
+    margin-left: 25%;
+    padding: 0;
+  }
+
+  .city-point {
+    float: none;
+    margin: auto;
+    display: block;
+  }
+
+  .neighborhoods {
+    margin-left: 25%;
+    padding: 0;
+  }
+
+  .neighborhood-box {
+    margin-top: 3%;
+  }
+
+}
